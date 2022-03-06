@@ -15,6 +15,7 @@ class _ResetSuccessState extends State<ResetSuccess> {
     return Material(
       color: Colors.white,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
             margin: EdgeInsets.fromLTRB(25, 125, 25, 100),
@@ -42,13 +43,14 @@ class _ResetSuccessState extends State<ResetSuccess> {
             height: 120,
           ),
           Container(
+            margin: EdgeInsets.fromLTRB(30, 0, 0, 0),
             width: MediaQuery.of(context).size.width * .8,
             height: 50,
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                   primary: Colors.blue.shade700,
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10))),
+                      borderRadius: BorderRadius.circular(50))),
               child: Text(
                 'Login ',
                 style: TextStyle(
