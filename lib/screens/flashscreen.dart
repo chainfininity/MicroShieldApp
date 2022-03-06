@@ -9,7 +9,7 @@ class FlashScreen extends StatefulWidget {
 class _FlashScreenState extends State<FlashScreen> {
   @override
   void navigateToNextScreen() {
-    Future.delayed(Duration(seconds: 8), () {
+    Future.delayed(Duration(seconds: 3), () {
       Navigator.pushNamed(context, '/welcome');
     });
   }

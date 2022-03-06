@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:microshieldapp/screens/doclogin.dart';
+import 'package:microshieldapp/screens/docsignup.dart';
 import 'package:microshieldapp/screens/flashscreen.dart';
+import 'package:microshieldapp/screens/forgotpassword.dart';
 import 'package:microshieldapp/screens/welcome.dart';
 
 void main() {
@@ -20,9 +23,9 @@ class _MicroShieldAppState extends State<MicroShieldApp> {
       routes: {
         '/': (context) => FlashScreen(),
         '/welcome': (context) => Welcome(),
-        // '/login': (context) => login(),
-        // '/logup': (context) => logup(),
-        // '/home': (context) => home(),
+        '/doclogin': (context) => DocLogin(),
+        '/docsignup': (context) => DocSignup(),
+        '/forgotpassword': (context) => ForgotPassword(),
       },
     );
   }
