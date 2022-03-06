@@ -52,7 +52,9 @@ class _WelcomeState extends State<Welcome> {
               child: IconButton(
                 icon: Image.asset('lib/assets/images/userLogin.PNG'),
                 iconSize: 50,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context, '/userlogin');
+                },
               ),
             ),
           ],
